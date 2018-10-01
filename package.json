@@ -1,8 +1,6 @@
 {
   "name": "university-clubs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -15,12 +13,12 @@
     ]
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:client": "yarn --cwd ./client dev",
+    "dev:server": "yarn --cwd ./server dev",
+    "dev": "concurrently --kill-others \"yarn dev:client\" \"yarn dev:server\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
+    "concurrently": "^4.0.1",
     "husky": "^1.0.1",
     "lint-staged": "^7.3.0",
     "prettier": "1.14.3",
