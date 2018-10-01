@@ -1,0 +1,15 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

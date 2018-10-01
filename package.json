@@ -1,0 +1,29 @@
+{
+  "name": "university-clubs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^1.0.1",
+    "lint-staged": "^7.3.0",
+    "prettier": "1.14.3",
+    "prettier-eslint": "^8.8.2"
+  }
+}
